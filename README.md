@@ -11,19 +11,17 @@ This solution was created to demonstrate how creating a cloud infrastructure on 
 The solution creates a Virtual Private Cloud, EC2 instances and an Application Load Balancer according to requirements.
 
 ## Folders and Files
-- /project - Terraform directory
-  - ./modules - Terraform modules
-    - ./network - "network" module
-- presentation - Presentation of the project
+-vpc - "network" module
+
 
 ## Configuration
 Main configuration files are the next:
-- /project/modules/network/
+- /vpc
   - variables.tf - Module variables 
   - vpc.tf - Virtual Private Cloud
-  - servers.tf - Bastion and Web Servers
-  - user_data.tftpl - Apache server with a custom web page   
-  - alb.tf - Application Load Balancer
+  - EC2.tf - Bastion and Web Servers
+  - server.tftpl - Apache server with a custom web page   
+  - ALB.tf - Application Load Balancer
   - outputs.tf - Module outputs
 - /project/
   - main.tf - Infrastructure configuration
