@@ -22,10 +22,9 @@ Main configuration files are the next:
   - EC2.tf - Bastion and Web Servers
   - server.tftpl - Apache server with a custom web page   
   - ALB.tf - Application Load Balancer
-  - outputs.tf - Module outputs
-- /project/
-  - main.tf - Infrastructure configuration
-  - outputs.tf - Main outputs
+
+- main.tf - Infrastructure configuration
+- outputs.tf - Main outputs
 
 
   
